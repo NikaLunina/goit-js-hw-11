@@ -1,3 +1,7 @@
+
+import axios from 'axios';
+
+
 const ENDPOINT = 'https://pixabay.com/api/';
 
 export default class FetchGallery {

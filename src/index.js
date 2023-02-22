@@ -20,7 +20,9 @@ function onSubmit(e) {
   const inputValue = form.elements.searchQuery.value.trim();
 
   fetchGallery.searchQuery = inputValue;
-
+  if(fetchGallery.searchQuery === ""){
+    return  Notiflix.Notify.failure("Request cannot be empty. Please enter a value!")
+  }
   fetchGallery.resetPage();
   clearList();
 
